@@ -19,9 +19,9 @@ class SubtitutionCipherEncrypt
 
 		try
 		{	
-			FileReader read1 = new FileReader("input.text");
-			FileReader read2 = new FileReader("key.text");
-			FileWriter write1 = new FileWriter("encrypted.text");
+			FileReader read1 = new FileReader("input.txt");
+			FileReader read2 = new FileReader("key.txt");
+			FileWriter write1 = new FileWriter("encrypted.txt");
 			BufferedReader key = new BufferedReader(read2);
 			BufferedReader in = new BufferedReader(read1);
 			BufferedWriter out = new BufferedWriter(write1);
@@ -75,9 +75,9 @@ class SubtitutionCipherDecrypt extends SubtitutionCipherEncrypt
 
 		try
 		{	
-			FileWriter write1 = new FileWriter("decrypted.text");
-			FileReader read1 = new FileReader("key.text");
-			FileReader read2 = new FileReader("encrypted.text");
+			FileWriter write1 = new FileWriter("decrypted.txt");
+			FileReader read1 = new FileReader("key.txt");
+			FileReader read2 = new FileReader("encrypted.txt");
 			BufferedReader key = new BufferedReader(read1);
 			BufferedReader enc = new BufferedReader(read2);
 			BufferedWriter dec = new BufferedWriter(write1);
