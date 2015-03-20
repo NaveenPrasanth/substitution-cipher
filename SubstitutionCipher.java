@@ -9,7 +9,7 @@ import java.*;
 import java.util.Scanner;
 
 
-class SubtitutionCipherEncrypt
+class SusbtitutionCipherEncrypt
 {
 	public void encryptText()
 	{
@@ -65,7 +65,7 @@ class SubtitutionCipherEncrypt
 
 
 
-class SubtitutionCipherDecrypt extends SubtitutionCipherEncrypt
+class SubstitutionCipherDecrypt extends SubstitutionCipherEncrypt
 {
 	public  void decryptText()
 	{
@@ -118,12 +118,12 @@ class SubtitutionCipherDecrypt extends SubtitutionCipherEncrypt
 
 	}
 }
-class SubtitutionCipher extends SubtitutionCipherDecrypt
+class SubstitutionCipher extends SubstitutionCipherDecrypt
 {
 	public static void main(String[] args)
 	{
-		SubtitutionCipherDecrypt decryptify = new SubtitutionCipherDecrypt();
-		SubtitutionCipherEncrypt encryptify = new SubtitutionCipherEncrypt();
+		SubstitutionCipherDecrypt decryptify = new SusbtitutionCipherDecrypt();
+		SubstitutionCipherEncrypt encryptify = new SusbtitutionCipherEncrypt();
 		Scanner obj = new Scanner(System.in);
 		System.out.println("What do you want to do ? \n 1.Encrypt data \n 2.Decrypt data \n");
 		int choice = obj.nextInt();
